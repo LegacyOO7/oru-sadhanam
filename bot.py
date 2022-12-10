@@ -444,8 +444,7 @@ async def chapter_click(client, data, chat_id):
 
         caption = f'{chapter.manga.name} - {chapter.name}\n'
         if options & OutputOptions.Telegraph:
-            caption += f'[Read on telegraph]({chapterFile.telegraph_url})\n'
-        caption += f'<b>➥@Manga_Manhwa_Hub</b>'
+            caption += f'➥@Manga_Manhwa_Hub'
         media_docs = []
         if options & OutputOptions.PDF:
             media_docs.append(InputMediaDocument(chapterFile.file_id))
