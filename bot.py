@@ -395,7 +395,7 @@ async def chapter_click(client, data, chat_id):
 
         caption = '\n'.join([
             f'{chapter.manga.name} - {chapter.name}',
-            f'<b>➥@Manga_Manhwa_Hub</b>'
+            f'{<b>➥@Manga_Manhwa_Hub</b>}'
         ])
 
         download = not chapterFile
@@ -444,7 +444,7 @@ async def chapter_click(client, data, chat_id):
 
         caption = f'{chapter.manga.name} - {chapter.name}\n'
         if options & OutputOptions.Telegraph:
-            caption += f'➥@Manga_Manhwa_Hub'
+            caption += f'{➥@Manga_Manhwa_Hub}'
         media_docs = []
         if options & OutputOptions.PDF:
             media_docs.append(InputMediaDocument(chapterFile.file_id))
