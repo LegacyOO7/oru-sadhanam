@@ -395,7 +395,7 @@ async def chapter_click(client, data, chat_id):
 
         caption = '\n'.join([
             f'{chapter.manga.name} - {chapter.name}',
-            f'➥@Manga_Manhwa_Hub')]
+            f'➥@Manga_Manhwa_Hub'])
         ])
 
         download = not chapterFile
